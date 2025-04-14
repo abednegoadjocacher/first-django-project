@@ -4,11 +4,14 @@ This is my first hands on experience project built with Django framework for Pyt
 How do you start a django project?
 1. Open the folder to start your project.
 2. Crete a virtual environment and activate it.
-3. Install django using "pip install django".
-4. Finally if the install is done you can start a project.
-5. When django is install you have access to django admin.
-6. Start a django project either using the manage.py file that comes when you install Django.
-7. like this "python manage.py startproject 'give_your_project_name'"
-8. From there you go ahead and start an app.
-9. Apps in Django are different from projects because one project can have multiple apps
+3. This is the command to create virtual environment "python -m venv 'name_environment'"
+4. Install django using "pip install django".
+5. Finally if the install is done you can start a project.
+6. When django is install you have access to django admin utility.
+7. Start a django project 'django-admin' that comes when you install Django.
+8. like this "django-admin startproject 'give_your_project_name'"
+9. From there you go ahead and start an app.
+10. To start an app, you can use the manage.py file or the default django start app utility.
+11. Here is how to start an app using the manage.py file: "python manage.py startapp 'give_your_app_name'".
+12. Apps in Django are different from projects because one project can have multiple apps
 
