@@ -1,0 +1,31 @@
+{% extends 'pages_app/base.html' %}
+{% block pageTitle %} blogs {% endblock pageTitle %}
+
+{% block Main %}
+<section>
+    <p>
+        Hi, I am Adjocacher Abednego.
+        A software Engineer.
+    </p>
+</section>
+
+<div class="container">
+        {% for post in posts %}
+
+            <h2 class="abed">
+                {{post.title}} by
+                {{post.name}} at {{post.update}}
+            </h2>
+                    <div class="container-display container">
+                        <img src="{{ post.image_blog.url }}" alt="Post Image">
+                      <p> {{post.message}} </p>
+                    </div>
+                
+            
+
+        {% endfor %}
+        
+
+</div>
+<p>THANK YOU</p>
+{% endblock Main %}

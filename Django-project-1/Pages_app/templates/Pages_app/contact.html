@@ -1,0 +1,61 @@
+{% extends 'pages_app/base.html' %}
+{% block pageTitle%} contact {% endblock pageTitle %}
+
+{% block Main %}
+
+<section>
+    <p> Wow it works😎😎😎</p>
+</section>
+<div class="form-container">
+                <h1>Feedback Form</h1>
+                
+                <p class="description">
+                    We would love to hear your thoughts, suggestions, concerns or problems with
+                    anything so we can improve!
+                </p>
+                
+                <form>
+                    <div class="form-group">
+                        <label>Feedback Type</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="feedbackType" class="radio-input">
+                                <span class="radio-text">Comments</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="feedbackType" class="radio-input">
+                                <span class="radio-text">Suggestions</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="feedbackType" class="radio-input">
+                                <span class="radio-text">Questions</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="feedback">Describe Your Feedback:</label>
+                        <textarea id="feedback" rows="7"></textarea>
+                    </div>
+                    
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input type="text" id="name">
+                    </div>
+                    
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="phone">Contact</label>
+                        <input type="text" id="phone">
+                    </div>
+                    
+                    <div class="form-submit">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+{% endblock Main %}
