@@ -7,3 +7,8 @@ I got my first index file running for a test.
 My next option is to create UI/UX design of the Web App. I will get my wireframe done and come back to continue.
 
 I will also change the sqlite3 database to MySql database of my choice.
+
+I have learned about DJango secret keys.
+I have install python-dotenv.
+Load it inside the manage.py file by importing dotenv.
+Assign my secret key to secret variable inside the settings.py file by the help of os.environ.get("the name of my secret key inside my .env file")
